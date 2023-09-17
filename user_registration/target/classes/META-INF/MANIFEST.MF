@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: USER
+Build-Jdk: 17.0.7
+Implementation-Title: user_registration
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: user_registration
+Implementation-URL: https://spring.io/projects/spring-boot/user_registra
+ tion
+Created-By: Maven Integration for Eclipse
+

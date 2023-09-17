@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Users</title>
+  <style>
+    table {
+       border: 1px solid black;
+       border-collapse: collapse;
+       width: 100%;
+       font-size: 20px;
+       padding: 5px;
+    }
+    
+    th, td {
+    
+     border: 1px solid black;
+    }
+    
+    th {
+        background-color: #0077A8;
+        color: white;
+    
+    }
+    
+    td {
+    padding-left: 5px;
+    
+    }
+  
+  
+  </style>
+
+
+</head>
+<body>
+
+   <table>
+       <tr>
+         <th>Name</th>
+         <th>Street</th>
+         <th>City</th>
+         <th>State</th>
+         <th>Zip Code</th>
+         <th>Gender</th>
+       
+       </tr>
+        <tr  th:each="users : ${user}">
+           <td  th:text="${users.name}"></td>
+           <td  th:text="${users.street}"></td>
+           <td  th:text="${users.city}"></td>
+           <td  th:text="${users.state}"></td>
+           <td  th:text="${users.zipCode}"></td>
+           <td  th:text="${users.gender}"></td>
+        </tr>
+   
+   </table>
+
+</body>
+</html>
